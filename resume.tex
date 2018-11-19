@@ -1,0 +1,208 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+
+\pagestyle{empty}
+\setlength{\parindent}{0ex}
+\setlength{\parskip}{.7ex plus .2ex minus .2ex}
+
+\usepackage[margin=.55in, top=.75in]{geometry}
+
+\usepackage{multicol}
+\setlength{\columnsep}{.3in}
+
+% compile with xelatex / lualatex
+\usepackage{fontspec}
+\setmainfont[UprightFont=* Light, BoldFont=* Medium]{Lato}
+\newfontfamily{\raleway}{Raleway}
+\usepackage[pro]{fontawesome5}
+\faStyle{light}
+
+\usepackage{color}
+\color[RGB]{32,33,36}
+
+\definecolor{urlcolor}{RGB}{16,86,105}
+\usepackage[
+  unicode,
+  pdftitle={Jonah E. Bernhard resume},
+  pdfauthor={Jonah E. Bernhard},
+  bookmarks=false,
+  colorlinks=true,
+  urlcolor=urlcolor
+]{hyperref}
+
+\usepackage[explicit]{titlesec}
+% \titleformat{command}[shape]{format}{label}{sep}{before-code}[after-code]
+\titleformat{\section}{\Large\raleway}{}{0ex}{%
+  #1\color[RGB]{121,170,182}\hspace{.75ex}\leavevmode\leaders\hrule height .65ex depth \dimexpr.4pt-.65ex\hfill\kern0pt%
+}
+\titleformat{\subsection}{\bf}{}{0ex}{#1}
+% \titlespacing{command}{left}{before-sep}{after-sep}[right-sep]
+\titlespacing{\section}{0ex}{3ex plus 2ex minus 1.5ex}{.4ex}
+\titlespacing{\subsection}{0ex}{.6ex plus .2 ex minus .2ex}{0ex minus .2ex}
+
+
+\begin{document}
+
+\newcommand{\icon}[1]{{\color[gray]{.5}\faIcon{#1}\enspace}}
+
+\begin{center}
+  {\huge\raleway Jonah E.\ Bernhard \\[1ex]}
+  \icon{globe}\href{https://jbernhard.xyz}{jbernhard.xyz}
+  \qquad
+  \icon{envelope}\href{mailto:jonah.bernhard@gmail.com}{jonah.bernhard@gmail.com}
+  \qquad
+  \icon{github}\href{https://github.com/jbernhard}{jbernhard}
+\end{center}
+
+\smallskip
+
+\begin{multicols}{2}
+
+\section{Education}
+
+\subsection{Duke University}
+\vspace{-\parskip}
+{\small Durham, North Carolina \hfill August 2011--March 2018}
+
+Ph.D.\ Physics (2018)
+
+Dissertation: Bayesian parameter estimation for relativistic heavy-ion collisions
+(\href{https://arxiv.org/abs/1804.06469}{arXiv:1804.06469 [nucl-th]})
+
+\subsection{Swarthmore College}
+\vspace{-\parskip}
+{\small Swarthmore, Pennsylvania \hfill September 2007--May 2011}
+
+B.A.\ Chemical Physics with Highest Honors (2011)
+
+Honors thesis: Lorentz violation in solar-neutrino oscillations
+
+
+\section{Experience}
+
+\subsection{Graduate research assistant}
+\vspace{-\parskip}
+{\small Duke University (QCD theory group) \hfill January 2012--April 2018}
+
+Applied Bayesian parameter estimation methods to quantify fundamental properties of the quark-gluon plasma created in relativistic heavy-ion collisions.
+Achieved the most precise measurements to date, and the first with quantitative uncertainties.
+
+Developed computational models of heavy-ion collisions.
+Publicly distributed code on Github and wrote documentation.
+
+Used high-performance and high-throughput computational systems to run large-scale simulations of heavy-ion collisions.
+Managed and analyzed large scientific datasets.
+
+Published first-author articles in peer-reviewed journals and presented research at international conferences.
+
+\subsection{Undergraduate research assistant}
+\vspace{-\parskip}
+{\small Swarthmore College \hfill January 2010--May 2011}
+
+Modeled and quantified the possible effects of Lorentz violation on solar neutrinos.
+
+Developed computational models of neutrino oscillations and derived new theoretical results.
+
+\subsection{Summer research fellow}
+\vspace{-\parskip}
+{\small Swarthmore College \hfill June--August 2009}
+
+Performed experimental studies of the excited states of nitric oxide gas.
+
+Operated lasers and other chemistry lab equipment.
+Analyzed spectroscopic data.
+
+
+\section{Awards and honors}
+
+Brookhaven National Laboratory Merit Award (2018)
+
+Quark Matter Young Scientist Fellowship (2012--2017)
+
+ECT* Doctoral Training Program Fellowship (2014)
+
+Swarthmore College Highest Honors (2011)
+
+
+\columnbreak
+
+
+\section{Technical skills}
+
+\subsection{Programming languages}
+
+Python, Cython, C++, C, Bash, Mathematica, JavaScript, PHP, R, Fortran
+
+\subsection{Bayesian methods}
+
+Parameter estimation, model calibration, uncertainty quantification, Gaussian processes, MCMC / Monte Carlo methods
+
+\subsection{Data analysis and storage}
+
+numpy, scipy, scikit-learn, pandas;
+HDF5, SQL
+
+\subsection{Software engineering}
+
+Building computational models of physical systems, creating data analysis tools, Git, test-driven development
+
+\subsection{High-performance computing}
+
+MPI, OpenMP, SLURM, HTCondor
+
+\subsection{Linux / Unix}
+
+General system administration, shells (Bash, Zsh), other standard utilities (awk, sed, etc)
+
+\subsection{Web development}
+
+HTML, CSS / Sass, Jinja, jQuery, PHP, SQL
+
+\subsection{Document preparation}
+
+Jupyter / IPython, Sphinx, Doxygen, \LaTeX, Mathematica
+
+
+
+\section{Publications}
+
+\emph{%
+  The following is a selection of my most notable works.
+  For a complete list, see my website, \href{https://jbernhard.xyz}{jbernhard.xyz}.
+}
+
+\subsection{Ph.D.\ dissertation}
+
+J.~E.~Bernhard,
+``Bayesian parameter estimation for relativistic heavy-ion collisions,''
+\href{https://arxiv.org/abs/1804.06469}{arXiv:1804.06469 [nucl-th]}.
+
+\subsection{Journal articles}
+
+J.~E.~Bernhard \textit{et.\ al.},
+``Applying Bayesian parameter estimation to relativistic heavy-ion collisions: Simultaneous characterization of the initial state and quark-gluon plasma medium,''
+\href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.94.024907}{Phys.\ Rev.\ C 94, 024907 (2016)},
+\href{https://arxiv.org/abs/1605.03954}{arXiv:\allowbreak 1605.03954 [nucl-th]}.
+
+J.~E.~Bernhard \textit{et.\ al.},
+``Quantifying properties of hot and dense QCD matter through systematic model-to-data comparison,''
+\href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.91.054910}{Phys.\ Rev.\ C 91, 054910 (2015)},
+\href{https://arxiv.org/abs/1502.00339}{arXiv:1502.00339 [nucl-th]}.
+
+% J.~S.~Moreland, J.~E.~Bernhard, S.~A.~Bass,
+% ``Alternative ansatz to wounded nucleon and binary collision scaling in high-energy nuclear collisions,''
+% \href{https://journals.aps.org/prc/abstract/10.1103/PhysRevC.92.011901}{Phys.\ Rev.\ C 92, 011901 (2015)},
+% \href{https://arxiv.org/abs/1412.4708}{arXiv:1412.4708 [nucl-th]}.
+
+\subsection{Conference proceedings}
+
+J.~E.~Bernhard \textit{et.\ al.},
+``Characterization of the initial state and QGP medium from a combined Bayesian analysis of LHC data at 2.76 and 5.02 TeV,''
+\href{https://www.sciencedirect.com/science/article/pii/S0375947417301549}{Nucl.\ Phys.\ A 967, 293 (2017)},
+\href{https://arxiv.org/abs/1704.04462}{arXiv:1704.04462 [nucl-th]},
+\href{https://indico.cern.ch/event/433345/contributions/2358284}{presented at Quark Matter 2017}.
+
+\end{multicols}
+
+\end{document}
