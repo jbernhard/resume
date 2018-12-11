@@ -16,7 +16,6 @@
 \setmainfont[UprightFont=* Light, BoldFont=* Medium]{Lato}
 \newfontfamily{\raleway}{Raleway}
 \usepackage[pro]{fontawesome5}
-\faStyle{light}
 
 \usepackage{color}
 \color[RGB]{32,33,36}
@@ -44,20 +43,19 @@
 
 \begin{document}
 
-\newcommand{\icon}[1]{{\color[gray]{.5}\faIcon{#1}\enspace}}
+\newcommand{\link}[3]{{\color[gray]{.6}\faIcon[solid]{#1}\enspace\href{#2}{#3}}}
 \newcommand{\sep}{{\enspace\textperiodcentered\enspace}}
 
 \begin{center}
-  {\huge\raleway Jonah E.\ Bernhard \\[1ex]}
+  {\huge\raleway Jonah E.\ Bernhard} \\[1em]
   Computational physicist\sep
   Data scientist\sep
   Optimal solution finder\sep
   Writer, speaker, designer\\[1em]
-  \icon{globe}\href{https://jbernhard.xyz}{jbernhard.xyz}
-  \qquad
-  \icon{envelope}\href{mailto:jonah.bernhard@gmail.com}{jonah.bernhard@gmail.com}
-  \qquad
-  \icon{github}\href{https://github.com/jbernhard}{jbernhard}
+  % \link{globe}{https://jbernhard.xyz}{jbernhard.xyz}\qquad
+  \link{envelope}{mailto:jonah.bernhard@gmail.com}{jonah.bernhard@gmail.com}\qquad
+  \link{github}{https://github.com/jbernhard}{jbernhard}\qquad
+  \link{linkedin}{https://www.linkedin.com/in/jbernhard}{jbernhard}
 \end{center}
 
 \smallskip
