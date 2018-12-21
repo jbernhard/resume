@@ -38,7 +38,7 @@
 \titleformat{\subsection}{\bf}{}{0ex}{#1}
 % \titlespacing{command}{left}{before-sep}{after-sep}[right-sep]
 \titlespacing{\section}{0ex}{3ex plus 2ex minus 2ex}{.4ex}
-\titlespacing{\subsection}{0ex}{.6ex plus .3ex minus .3ex}{0ex minus .2ex}
+\titlespacing{\subsection}{0ex}{.6ex plus .3ex minus .3ex}{0ex minus .8ex}
 
 
 \begin{document}
@@ -62,11 +62,12 @@
 
 \begin{multicols}{2}
 
+\newcommand{\subheading}[3]{{\small #1 \hfill #2--#3}}
+
 \section{Education}
 
 \subsection{Duke University}
-\vspace{-\parskip}
-{\small Durham, North Carolina \hfill August 2011--April 2018}
+\subheading{Durham, North Carolina}{August 2011}{April 2018}
 
 Ph.D.\ Physics (2018)
 
@@ -74,8 +75,7 @@ Dissertation: Bayesian parameter estimation for relativistic heavy-ion collision
 (\href{https://arxiv.org/abs/1804.06469}{arXiv:1804.06469 [nucl-th]})
 
 \subsection{Swarthmore College}
-\vspace{-\parskip}
-{\small Swarthmore, Pennsylvania \hfill September 2007--May 2011}
+\subheading{Swarthmore, Pennsylvania}{September 2007}{May 2011}
 
 B.A.\ Chemical Physics with Highest Honors (2011)
 
@@ -85,8 +85,7 @@ Honors thesis: Lorentz violation in solar-neutrino oscillations
 \section{Experience}
 
 \subsection{Graduate research assistant}
-\vspace{-\parskip}
-{\small Duke University (QCD theory group) \hfill January 2012--May 2018}
+\subheading{Duke University (QCD theory group)}{January 2012}{May 2018}
 
 Applied Bayesian parameter estimation to quantify fundamental properties of the quark-gluon plasma created in relativistic heavy-ion collisions.
 Achieved the most precise measurements to date, and the first with quantitative uncertainties.
@@ -100,23 +99,20 @@ Managed and analyzed large scientific datasets.
 Published first-author articles in peer-reviewed journals and presented research at international conferences.
 
 \subsection{Teaching assistant \& tutor}
-\vspace{-\parskip}
-{\small Swarthmore College \& Duke University \hfill 2010--2014}
+\subheading{Swarthmore College \& Duke University}{2010}{2014}
 
 Taught physics and chemistry recitations.
 Privately tutored undergraduate students.
 
 \subsection{Undergraduate research assistant}
-\vspace{-\parskip}
-{\small Swarthmore College \hfill January 2010--May 2011}
+\subheading{Swarthmore College}{January 2010}{May 2011}
 
 Modeled and quantified the possible effects of Lorentz violation on solar neutrinos.
 
 Developed computational models of neutrino oscillations and derived new theoretical results.
 
 \subsection{Summer research fellow}
-\vspace{-\parskip}
-{\small Swarthmore College \hfill June--August 2009}
+\subheading{Swarthmore College}{June}{August 2009}
 
 Performed experimental studies of the excited states of nitric oxide gas.
 
@@ -153,17 +149,17 @@ matplotlib, publication-quality graphics
 
 Building and optimizing computational models of physical systems, creating data analysis tools, Git, test-driven development
 
+\subsection{Machine learning}
+
+Neural networks \& deep learning, Gaussian processes, linear \& logistic regression, PCA
+
 \subsection{Bayesian statistics}
 
 Parameter estimation, model calibration, inference, uncertainty quantification, Gaussian processes, MCMC
 
-\subsection{High-performance computing}
-
-MPI, OpenMP, SLURM, HTCondor
-
 \subsection{Linux / Unix}
 
-General system administration, shells (Bash, Zsh), other standard utilities (awk, sed, etc.)
+General system administration, HPC \& HTC systems, shells (Bash, Zsh), other standard utilities (awk, sed, etc.)
 
 \subsection{Web development}
 
@@ -177,11 +173,13 @@ Jupyter / IPython, Sphinx, Doxygen, \LaTeX, Mathematica
 
 \section{Publications \& presentations}
 
+\vspace{-.5\parskip}
 \emph{%
   \small
   The following is a selection of my most notable works.
   For more information, see \href{https://jbernhard.xyz/papers}{jbernhard.xyz/papers} and \href{https://jbernhard.xyz/talks}{jbernhard.xyz/talks}.
 }
+\vspace{-.5\parskip}
 
 % \subsection{Ph.D.\ dissertation}
 
